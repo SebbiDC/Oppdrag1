@@ -1,0 +1,19 @@
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.galeri img {
+    width: 50vh;
+}

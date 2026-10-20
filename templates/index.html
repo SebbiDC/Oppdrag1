@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="galeri">
+    <img src="{{ url_for('static', filename='img/ludo.jpg') }}" alt="Board games on a table">
+    <img src="{{ url_for('static', filename='img/catan.jpg') }}" alt="Board games on a table">
+    <img src="{{ url_for('static', filename='img/monopol.jpg') }}" alt="Board games on a table">
+    <img src="{{ url_for('static', filename='img/risk.jpg') }}" alt="Board games on a table">
+</div>
+{% endblock %}
