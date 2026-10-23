@@ -1,6 +1,49 @@
 {% extends "base.html" %}
 {% block content %}
 
+<form method="POST" class="test">
 
+    <div class="registrer">
+        <div id="navn">
+        <label for="navn">Navn</label>
+        <input type="text" id="navn" name="navn">
+        </div>
+        
+        <div id="email">
+        <label for="email">E-post</label>
+        <input type="email" name="email" id="email">    
+        </div>
+        
+        <div id="tlf">
+        <label for="tlf">Tlf:</label>
+        <input type="number" id="tall" name="tlf">    
+        </div>
+        
+        <div id="alder">
+        <label for="alder">Alder</label>
+        <input type="number" name="alder" id="tall">    
+        </div>
+        
+        <div id="tilgjenglighet">
+        <label for="tilgjenglighet">Er du ofte tilgjengelig</label>
+        <input type="checkbox">    
+        </div>
+        
+        <div id="v-spill">
+        <label for="v-spill">Velg spill</label>
+        <select name="v-spill" id="v-spill">
+            <option value="ludo">Ludo</option>
+            <option value="risk">Risk</option>
+            <option value="monopol">Monopol</option>
+            <option value="katan">Katan</option>
+        </select>    
+        </div>
+        
+        <div id="send">
+        <button type="submit">Send</button>    
+        </div>
+        
+    </div>
+    </form>
 
 {% endblock %}

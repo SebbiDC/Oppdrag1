@@ -1,19 +1,153 @@
+body{
+    background-image:url(/static/img/background.png);
+    background-size: cover;
 
+}
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    margin: 5%;
+    padding: 1vh;
+    background-color: black;
+    border: solid;
+    border-color: gold;
+    border-radius: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1vh;
 }
 
 
 .galeri {
+    border: solid;
+    border-color:  gold;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.88);
+    margin-left: 40vh;
+    margin-right: 40vh;
+    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    gap: 40px;
+    
 }
 
 
 .galeri img {
-    width: 50vh;
+    width: 40vh;
+}
+
+.hvorfor_lagde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    margin-top: 5vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.88) ;
+    border-radius: 20px;
+    border: solid;
+    border-color: gold;
+}
+
+.hvorfor_lagde p {
+    margin: 20px;
+}
+
+.registrer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 460px;
+    margin: 10vh auto 0;
+    padding: 32px 28px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.88);
+    border: 2px solid gold;
+    border-radius: 20px; 
+}
+
+.registrer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.registrer label {
+    font-weight: bold;
+    color: gold;
+}
+
+.registrer input[type="text"],
+.registrer input[type="email"],
+.registrer input[type="number"]{
+    width: 93%;
+    padding: 10px 14px;
+    font: inherit;
+    color: white;
+    background-color: #1b1b22;
+    border: 2px solid #3a3a45;
+    border-radius: 12px;
+}
+
+.registrer select {
+    width: 100%;
+    padding: 10px 14px;
+    font: inherit;
+    color: white;
+    background-color: #1b1b22;
+    border: 2px solid #3a3a45;
+    border-radius: 12px;
+}
+
+
+
+.registrer #tilgjenglighet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registrer #tilgjenglighet input {
+    margin-right: 2vh;
+    width: 22px;
+    height: 22px;
+    accent-color: gold;
+    cursor: pointer;
+}
+
+
+
+.registrer button {
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    background-color: gold;
+    border: 2px solid gold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.registrer button:hover {
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color: white;
 }
